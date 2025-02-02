@@ -32,12 +32,12 @@ Copyright © All rights Reserved
 ----------------------*/
 
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     position: relative;
 }
 
 a {
-    color: #e38cb7;
+    color: #00D700;
 }
 
 a:hover,
