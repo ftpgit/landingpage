@@ -47,7 +47,9 @@ URI     : https://colorlib.com
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="30">
+<body data-spy="scroll" data-target="#navbar" data-offset="30" onload="disableSubmit()">
+  <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Conditions
+  <input type="submit" name="submit" id="submit">
 
     <!-- Nav Menu -->
 
