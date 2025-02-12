@@ -10,22 +10,7 @@ URI     : https://colorlib.com
  -->
 
 <head>
-    <script>
- function disableSubmit() {
-  document.getElementById("submit").disabled = true;
- }
-
-  function activateButton(element) {
     
-      if(element.checked) {
-        document.getElementById("submit").disabled = false;
-       }
-       else  {
-        document.getElementById("submit").disabled = true;
-      }
-  
-  }
-</script>
     <title>Maquininha Ton</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -47,9 +32,7 @@ URI     : https://colorlib.com
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar" data-offset="30" onload="disableSubmit()">
-  <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Conditions
-  <input type="submit" name="submit" id="submit">
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
 
     <!-- Nav Menu -->
 
