@@ -34,6 +34,36 @@ URI     : https://colorlib.com
 
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
 
+ <div class="cookie-banner">
+        <img src="cookie.png" alt="Cookie Image">
+        <h1>Nós valorizamos sua privacidade!</h1>
+        <p>Através dos cookies, nós analisamos o que você mais gostou de ver em nosso site. Também podemos te sugerir futuramente anúncios personalziados.</p>
+        <div class="cookie-buttons">
+            <button class="accept-btn">Aceitar</button>
+            <button class="reject-btn">Negar</button>
+            <a href="#" class="learn-more">Saiba mais</a>
+        </div>
+    </div>
+
+    <script>
+        const cookieBanner = document.querySelector(".cookie-banner"),
+            acceptBtn = document.querySelector(".accept-btn"),
+            rejectBtn = document.querySelector(".reject-btn");
+
+        acceptBtn.onclick = () => {
+            document.cookie = "CookieConsent=Accepted; max-age=" + 60 * 60 * 24 * 30;
+            cookieBanner.style.display = "none";
+        }
+
+        rejectBtn.onclick = () => {
+            cookieBanner.style.display = "none";
+        }
+
+        if (document.cookie.indexOf("CookieConsent=Accepted") !== -1) {
+            cookieBanner.style.display = "none";
+        }
+    </script>
+ 
     <!-- Nav Menu -->
 
     <div class="nav-menu fixed-top">
